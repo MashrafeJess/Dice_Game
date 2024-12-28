@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.container{
+    text-align: right;
+    padding-top: 50px;
+}
+h1 {
+    padding-top: 50px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.list {
+    margin: 20px auto; /* Reduced margin for better responsiveness */
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 100%; /* Start with full width for smaller devices */
+    max-width: 250px; /* Cap the maximum size */
+    margin: 20px; /* Reduced margin for smaller screens */
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease; /* Add some interaction */
+}
+
+.box:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .box {
+        width: 45%; /* Adjust size for medium screens */
+    }
+}
+
+@media (min-width: 1024px) {
+    .box {
+        width: 250px; /* Fixed size for larger screens */
+        margin: 30px; /* Adjust spacing */
+    }
+}
